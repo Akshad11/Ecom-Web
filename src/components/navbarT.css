@@ -1,0 +1,31 @@
+.sale-header button:active {
+    transform: scale(0.90);
+}
+
+.sale-header button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-bar li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-bar li:active {
+    transform: scale(0.90);
+}
+
+.icon-span {
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-icon:active {
+    transform: scale(0.90);
+}
+
+.iconclick:active {
+    transform: scale(0.90);
+}

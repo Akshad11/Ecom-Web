@@ -1,0 +1,348 @@
+.signin-content {
+    display: flex;
+}
+
+.sign-img {
+    object-fit: cover;
+}
+
+.sign-img img {
+    object-fit: cover;
+}
+
+.sign-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sign-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+
+.InputSI {
+    border: 0px;
+    border-bottom: 2px solid black;
+}
+
+.InputSI:focus {
+    border: 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.forgotPassP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SignUpbtn {
+    border-radius: 7px;
+    border: 0cap;
+    color: white;
+    background-color: #DB4444;
+    ;
+
+}
+
+.presseffect {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.presseffect:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ForgetPasswordpe {
+    color: #DB4444;
+    text-decoration: underline;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.ForgetPasswordpe:active {
+    color: #f96d6d;
+    text-decoration-color: transparent;
+}
+
+.forgotPassP p {
+    color: #DB4444;
+}
+
+@media only screen and (max-width: 768px) {
+    .Sign-div {
+        width: 100%;
+        height: auto;
+    }
+
+    .signin-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .sign-img {
+        display: none;
+        width: 50%;
+        height: 100%;
+    }
+
+    .sign-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-form {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .Sign-inputs {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .Sign-inputs h2 {
+        font-size: 30px;
+    }
+
+    .Sign-inputs p {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .InputSI {
+        width: 90%;
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .forgotPassP {
+        width: 100%;
+        justify-content: start;
+        gap: 30px;
+    }
+
+    .forgotPassP button {
+        width: 120px;
+        height: 40px;
+
+
+    }
+
+    .forgotPassP p {
+        font-weight: 100;
+        font-size: 17px;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .Sign-div {
+        width: 100%;
+        height: 800px;
+    }
+
+    .signin-content {
+        width: 100%;
+        height: 700px;
+    }
+
+    .sign-img {
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+
+    .sign-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-form {
+        width: 50%;
+        height: 100%;
+    }
+
+    .Sign-inputs {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .Sign-inputs h2 {
+        font-size: 40px;
+    }
+
+    .Sign-inputs p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .InputSI {
+        width: 90%;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .forgotPassP {
+        width: 100%;
+    }
+
+    .forgotPassP button {
+        width: 150px;
+        height: 50px;
+
+
+    }
+
+    .forgotPassP p {
+        font-weight: 100;
+        font-size: 17px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Sign-div {
+        width: 100%;
+        height: 800px;
+    }
+
+    .signin-content {
+        width: 100%;
+        height: 700px;
+    }
+
+    .sign-img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .sign-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-form {
+        width: 50%;
+        height: 100%;
+    }
+
+    .Sign-inputs {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .Sign-inputs h2 {
+        font-size: 40px;
+    }
+
+    .Sign-inputs p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .InputSI {
+        width: 90%;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .forgotPassP {
+        width: 100%;
+    }
+
+    .forgotPassP button {
+        width: 150px;
+        height: 50px;
+
+
+    }
+
+    .forgotPassP p {
+        font-weight: 100;
+        font-size: 17px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Sign-div {
+        width: 100%;
+        height: 800px;
+    }
+
+    .signin-content {
+        width: 100%;
+        height: 700px;
+    }
+
+    .sign-img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .sign-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-form {
+        width: 50%;
+        height: 100%;
+    }
+
+    .Sign-inputs {
+        width: 60%;
+        gap: 20px;
+    }
+
+    .Sign-inputs h2 {
+        font-size: 40px;
+    }
+
+    .Sign-inputs p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .InputSI {
+        width: 90%;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .forgotPassP {
+        width: 100%;
+    }
+
+    .forgotPassP button {
+        width: 150px;
+        height: 50px;
+
+
+    }
+
+    .forgotPassP p {
+        font-weight: 100;
+        font-size: 17px;
+        margin: 0px;
+    }
+
+}

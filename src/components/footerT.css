@@ -1,0 +1,23 @@
+
+.send-icon:active {
+    transform: scale(0.90);
+}
+
+
+.Support-ul li:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons li {
+    cursor: pointer;
+}
+
+
+
+.hoverunderline {
+    cursor: pointer;
+}
+
+
+

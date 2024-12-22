@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+.Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.noSelect{
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none;
+}
+
+.presseffect {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.presseffect:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-even {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.scrollView{
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
