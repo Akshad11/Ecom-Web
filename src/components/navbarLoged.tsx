@@ -8,16 +8,32 @@ export default function NavbarLoged() {
     const [isBarsClicked, setBarsClicked] = useState(false);
     const [isLogIconClicked, setLogIconClicked] = useState(false);
 
-    const [isLogedIn, setLogedIn] = useState(false);
+    const [isLogedIn, setLogedIn] = useState(true);
 
     const navigate = useNavigate();
 
     const handleSignoutClick = () => {
-        navigate('/signout'); // Navigate to the Sign In page
+        navigate('/signup'); // Navigate to the Sign In page
     };
 
+    const handleCartClick = () => {
+        navigate('/Cart'); // Navigate to the Sign In page
+    };
+
+    const handleContactClick = () => {
+        navigate('/Contact'); // Navigate to the Sign In page
+    };
+    const handleAboutClick = () => {
+        navigate('/About'); // Navigate to the Sign In page
+    };
+    const handleHomeClick = () => {
+        navigate('/Homepage'); // Navigate to the Sign In page
+    };
     const handleLoginClick = () => {
         navigate('/signin'); // Navigate to the Sign In page
+    };
+    const handleWaitListClick = () => {
+        navigate('/Wishlist'); // Navigate to the Sign In page
     };
 
     const changeBarClicked = () => {
@@ -85,12 +101,11 @@ export default function NavbarLoged() {
                 </div>
                 <ul
                     className={`flex-center absolute top-full w-1/2 noSelect py-5 md:py-0 ${isLogIconClicked ? 'right-0' : 'right-full'
-                        } flex-center flex-col bg-black text-white gap-5 md:static md:flex-row md:bg-white md:text-black
-                        md:text-md xl:text-xl
-                        `}
-                >    <li >Home</li>
-                    <li>Contact</li>
-                    <li>About</li>
+                        } flex-center flex-col whiteShadow z-10 bg-black text-white gap-5 md:static md:flex-row md:bg-white md:text-black md:text-md xl:text-xl`}
+                >    <li onClick={handleHomeClick}>Home</li>
+                    <li onClick={handleWaitListClick} className='md:hidden'>Wishlist</li>
+                    <li onClick={handleContactClick}>Contact</li>
+                    <li onClick={handleAboutClick}>About</li>
                     <li
                         onClick={isLogedIn ? handleSignoutClick : handleLoginClick}
                     >{isLogedIn ? "Sign Out" : "Sign Up"}</li>
@@ -107,11 +122,11 @@ export default function NavbarLoged() {
                 </div>
                 {
                     isLogedIn ? <div className={`px-5 gap-5 text-xl justify-center items-center ${isLogedIn ? "flex" : "hidden"} md:flex`}>
-                        <FontAwesomeIcon className='iconclick hidden md:flex' icon={faHeart} />
-                        <FontAwesomeIcon className='iconclick' icon={faCartShopping} />
+                        <FontAwesomeIcon onClick={handleWaitListClick} className='iconclick hidden md:flex' icon={faHeart} />
+                        <FontAwesomeIcon className='iconclick' onClick={handleCartClick} icon={faCartShopping} />
                         <div onClick={changeLogClicked} className='rounded-full presseffect w-7 h-7 flex justify-center items-center text-sm text-white bg-webOrg' > <FontAwesomeIcon icon={faUser} /> </div>
                     </div> : <div className={`px-5 gap-5 text-xl justify-center items-center ${!isLogedIn ? "flex" : "hidden"} md:flex`}>
-                        <FontAwesomeIcon className='iconclick md:flex' icon={faUser} onClick={changeLogInClicked} />
+                        <FontAwesomeIcon className='iconclick md:flex' icon={faUser} onClick={handleLoginClick} />
 
                     </div>
                 }

@@ -14,7 +14,7 @@ export default function SignUp() {
     };
 
     const handleCreateClick = () => {
-        navigate("/");
+        navigate("/homepage");
     }
 
     return (

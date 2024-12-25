@@ -3,8 +3,15 @@ import FooterT from '../components/FooterT'
 import './signIn.css'
 import sign from '../assets/signPic.png'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignIn() {
+  const navigate = useNavigate();
+
+
+  const handleHomeClick = () => {
+    navigate('/Homepage'); // Navigate to the Sign In page
+  };
   const [showPassword, setShowPassword] = useState<boolean>(false);
   return (
     <div>
@@ -36,7 +43,7 @@ export default function SignIn() {
                 <label htmlFor="showPasswordCheckbox">Show Password</label>
               </div>
               <div className='forgotPassP'>
-                <button className='presseffect' type='submit'>Log In</button>
+                <button className='presseffect' onClick={handleHomeClick} type='submit'>Log In</button>
                 <p className='ForgetPasswordpe noSelect'
 
                 >Forget Password</p>

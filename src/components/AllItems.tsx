@@ -23,7 +23,7 @@ const ProductList = ({ allProducts }: MyallProduct) => {
 
     return (
         <div className="flex flex-col justify-center items-center gap-5">
-            <div className="flex justify-between pr-4 gap-5 items-center flex-wrap">
+            <div className="flex justify-start pr-4 gap-5 items-center flex-wrap">
                 {allProducts.slice(0, visibleProducts).map((item, index) => (
                     <ItemCard
                         key={index}
