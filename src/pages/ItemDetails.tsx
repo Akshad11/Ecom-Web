@@ -22,6 +22,8 @@ interface ItemDetailsProps {
 
 export default function ItemDetails({ productID }: ItemDetailsProps) {
 
+    const productIDNum = parseInt(productID);
+
     const Product = [
         {
             img: [img1, img1, img1],
@@ -30,6 +32,7 @@ export default function ItemDetails({ productID }: ItemDetailsProps) {
             disPrice: "130",
             ogPrice: "160",
             rating: 4,
+            productID: productIDNum,
         },
     ]
 
