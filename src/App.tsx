@@ -7,7 +7,7 @@ import SignUp from './pages/SignUp';
 import About from './pages/About';
 import ContactPage from './pages/Contacts';
 import PageNotFound from './pages/PageNotFound';
-import WishList from './pages/WaitList';
+import WishList from './pages/WishList';
 import Cart from './pages/Cart';
 import ItemDetails from './pages/ItemDetails';
 

@@ -86,7 +86,7 @@ export default function NavbarLoged() {
                     <ul className=' w-9/12 gap-3 py-4 flex flex-col justify-center items-center'>
                         <li className='w-full flex justify-between md:justify-start md:gap-20'>Woman’s Fashion <FontAwesomeIcon icon={faAngleRight} /> </li>
                         <li className='w-full flex justify-between md:justify-start md:gap-20'>Men’s Fashion <FontAwesomeIcon icon={faAngleRight} /> </li>
-                        <li className='w-full'>Electronics </li>
+                        <li onClick={changeLogInClicked} className='w-full'>Electronics </li>
                         <li className='w-full'>Home & Lifestyle </li>
                         <li className='w-full'>Medicine </li>
                         <li className='w-full'>Sports & Outdoor</li>
